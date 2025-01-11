@@ -9,9 +9,10 @@
   /*background colour for tags and code blocks*/
   --background-primary-alt: #181b20;
   /*file explorer background colour*/
-  --background-secondary: #181b20;
+  --background-secondary: #1f2329;
   /*top ribbon color*/
-  --background-secondary-alt: #181b20;
+  --background-secondary-alt: #1f2329;
+  --tab-divider-color: #181b20;
 
   --background-accent: #000;
 
@@ -68,7 +69,7 @@
   --scrollbar-thumb-bg: #20242f;
   
   /*for things like border colour in status bar*/
-  --panel-border-color: #535965;
+  --panel-border-color: #1f2329;
 
   /*comments colours in code blocks*/
   --gray-1: #7a818e;
@@ -194,13 +195,13 @@
   --background-modifier-message: #a0a1a7;
 
   /*outline for different "objects"*/
-  --tab-outline-color: transparent;
-  --divider-color: transparent;
+  --tab-outline-color: #181b20;
+  --divider-color: #181b20;
 
   /*command palette border colour*/
-  --prompt-border-color: var(--green);
+  /* --prompt-border-color: var(--green); */
   /*user inputs border colour: https://docs.obsidian.md/Plugins/User+interface/Modals*/
-  --modal-border-color: var(--green);
+  /* --modal-border-color: var(--green); */
 
   --background-modifier-border-hover: var(--interactive-hover);
   --background-modifier-border-focus: var(--interactive-hover);
@@ -345,8 +346,11 @@ mjx-container {
 }
 
 /*control the padding for folders in file explorer*/
-.nav-file, .nav-folder {
-  padding: 2px 2px;
+.nav-file{
+	padding: 0px;
+}
+.nav-folder{
+	padding: 2px 2px;
 }
 
 /*colour of background and text when dragging files / folder*/
